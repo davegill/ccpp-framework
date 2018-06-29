@@ -117,4 +117,5 @@ MODULE_USE_TEMPLATE_SCHEME_CAP = \
                                GFS_cldprop_type,  GFS_radtend_type,     &
                                GFS_diag_type,     GFS_interstitial_type,&
                                GFS_init_type
+       use micm_type_defs
 '''
