@@ -1,19 +1,208 @@
 [ccpp-arg-table]
   name = wm_example_mod
   type = module
+[ ids ]
+  standard_name = horizontal_domain_dimension_start
+  type = integer
+  units = count
+  dimensions = ()
+[ ide ]
+  standard_name = horizontal_domain_dimension_end
+  type = integer
+  units = count
+  dimensions = ()
+[ jds ]
+  standard_name = horizontal_domain_dimension_2_start
+  type = integer
+  units = count
+  dimensions = ()
+[ jde ]
+  standard_name = horizontal_domain_dimension_2_end
+  type = integer
+  units = count
+  dimensions = ()
+[ kds ]
+  standard_name = vertical_domain_dimension_start
+  type = integer
+  units = count
+  dimensions = ()
+[ kde ]
+  standard_name = vertical_domain_dimension_end
+  type = integer
+  units = count
+  dimensions = ()
+[ ims ]
+  standard_name = horizontal_memory_dimension_start
+  type = integer
+  units = count
+  dimensions = ()
 [ ime ]
-  standard_name = horizontal_loop_extent
+  standard_name = horizontal_memory_dimension_end
+  type = integer
+  units = count
+  dimensions = ()
+[ jms ]
+  standard_name = horizontal_memory_dimension_2_start
+  type = integer
+  units = count
+  dimensions = ()
+[ jme ]
+  standard_name = horizontal_memory_dimension_2_end
+  type = integer
+  units = count
+  dimensions = ()
+[ kms ]
+  standard_name = vertical_memory_dimension_start
   type = integer
   units = count
   dimensions = ()
 [ kme ]
-  standard_name = vertical_level_dimension
+  standard_name = vertical_memory_dimension_end
+  type = integer
+  units = count
+  dimensions = ()
+[ ips ]
+  standard_name = horizontal_loop_dimension_start
+  type = integer
+  units = count
+  dimensions = ()
+[ ipe ]
+  standard_name = horizontal_loop_dimension_end
+  type = integer
+  units = count
+  dimensions = ()
+[ jps ]
+  standard_name = horizontal_loop_dimension_2_start
+  type = integer
+  units = count
+  dimensions = ()
+[ jpe ]
+  standard_name = horizontal_loop_dimension_2_end
+  type = integer
+  units = count
+  dimensions = ()
+[ kps ]
+  standard_name = vertical_loop_dimension_start
+  type = integer
+  units = count
+  dimensions = ()
+[ kpe ]
+  standard_name = vertical_loop_dimension_end
   type = integer
   units = count
   dimensions = ()
 [ th_phy ]
   standard_name = potential_temperature
   units = K
-  dimensions = (horizontal_loop_extent,vertical_level_dimension)
+  dimensions = (horizontal_memory_dimension_start:horizontal_memory_dimension_end,vertical_memory_dimension_start:vertical_memory_dimension_end,horizontal_memory_dimension_2_start:horizontal_memory_dimension_2_end)
+  type = real
+  kind = kind_phys
+[ qv ]
+  standard_name = water_vapor_mixing_ratio
+  units = kg/kg
+  dimensions = (horizontal_memory_dimension_start:horizontal_memory_dimension_end,vertical_memory_dimension_start:vertical_memory_dimension_end,horizontal_memory_dimension_2_start:horizontal_memory_dimension_2_end)
+  type = real
+  kind = kind_phys
+[ qc ]
+  standard_name = cloud_water_mixing_ratio
+  units = kg/kg
+  dimensions = (horizontal_memory_dimension_start:horizontal_memory_dimension_end,vertical_memory_dimension_start:vertical_memory_dimension_end,horizontal_memory_dimension_2_start:horizontal_memory_dimension_2_end)
+  type = real
+  kind = kind_phys
+[ qr ]
+  standard_name = rain_water_mixing_ratio
+  units = kg/kg
+  dimensions = (horizontal_memory_dimension_start:horizontal_memory_dimension_end,vertical_memory_dimension_start:vertical_memory_dimension_end,horizontal_memory_dimension_2_start:horizontal_memory_dimension_2_end)
+  type = real
+  kind = kind_phys
+[ rho ]
+  standard_name = air_density
+  units = kg/m^3
+  dimensions = (horizontal_memory_dimension_start:horizontal_memory_dimension_end,vertical_memory_dimension_start:vertical_memory_dimension_end,horizontal_memory_dimension_2_start:horizontal_memory_dimension_2_end)
+  type = real
+  kind = kind_phys
+[ pi_phy ]
+  standard_name = exner
+  units = dimensionless
+  dimensions = (horizontal_memory_dimension_start:horizontal_memory_dimension_end,vertical_memory_dimension_start:vertical_memory_dimension_end,horizontal_memory_dimension_2_start:horizontal_memory_dimension_2_end)
+  type = real
+  kind = kind_phys
+[ z ]
+  standard_name = height_asl
+  units = m
+  dimensions = (horizontal_memory_dimension_start:horizontal_memory_dimension_end,vertical_memory_dimension_start:vertical_memory_dimension_end,horizontal_memory_dimension_2_start:horizontal_memory_dimension_2_end)
+  type = real
+  kind = kind_phys
+[ dz8w ]
+  standard_name = layer_thickness
+  units = m
+  dimensions = (horizontal_memory_dimension_start:horizontal_memory_dimension_end,vertical_memory_dimension_start:vertical_memory_dimension_end,horizontal_memory_dimension_2_start:horizontal_memory_dimension_2_end)
+  type = real
+  kind = kind_phys
+[ rainnc ]
+  standard_name = accumulated_resolved_precipitation
+  units = kg/m^2
+  dimensions = (horizontal_memory_dimension_start:horizontal_memory_dimension_end,horizontal_memory_dimension_2_start:horizontal_memory_dimension_2_end)
+  type = real
+  kind = kind_phys
+[ rainncv ]
+  standard_name = timestep_resolved_precipitation
+  units = kg/m^2
+  dimensions = (horizontal_memory_dimension_start:horizontal_memory_dimension_end,horizontal_memory_dimension_2_start:horizontal_memory_dimension_2_end)
+  type = real
+  kind = kind_phys
+[ dtm ]
+  standard_name = time_step_for_physics
+  long_name = time step
+  units = s
+  dimensions = ()
+  type = real
+  kind = kind_phys
+[ xlv ]
+  standard_name = latent_heat_vaporization
+  units = J/kg
+  dimensions = ()
+  type = real
+  kind = kind_phys
+[ cp ]
+  standard_name = specific_heat_dry_air
+  units = J K/kg
+  dimensions = ()
+  type = real
+  kind = kind_phys
+[ ep_2 ]
+  standard_name = rd_over_rv
+  units = dimensionless
+  dimensions = ()
+  type = real
+  kind = kind_phys
+[ svp1 ]
+  standard_name = const1_saturation_vapor_pressure
+  units = dimensionless
+  dimensions = ()
+  type = real
+  kind = kind_phys
+[ svp2 ]
+  standard_name = const2_saturation_vapor_pressure
+  units = dimensionless
+  dimensions = ()
+  type = real
+  kind = kind_phys
+[ svp3 ]
+  standard_name = const3_saturation_vapor_pressure
+  units = K
+  dimensions = ()
+  type = real
+  kind = kind_phys
+[ svpt0 ]
+  standard_name = const4_saturation_vapor_pressure
+  units = K
+  dimensions = ()
+  type = real
+  kind = kind_phys
+[ rhowater ]
+  standard_name = density_liquid_water
+  units = kg/m^3
+  dimensions = ()
   type = real
   kind = kind_phys
