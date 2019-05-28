@@ -1,0 +1,73 @@
+[ccpp-arg-table]
+  name = kessler_run
+  type = scheme
+[ ncol ]
+  standard_name = horizontal_loop_extent
+  type = integer
+  units = count
+  dimensions = ()
+  intent = in
+[ ilev ]
+  standard_name = vertical_level_dimension
+  type = integer
+  units = count
+  dimensions = ()
+  intent = in
+[ t ]
+  standard_name = potential_temperature
+  units = K
+  dimensions = (horizontal_loop_extent,vertical_level_dimension)
+  type = real
+  kind = kind_phys
+  intent = inout
+[ errmsg ]
+  standard_name = ccpp_error_message
+  long_name = Error message for error handling in CCPP
+  units = 1
+  dimensions = ()
+  type = character
+  kind = len=512
+  intent = out
+[ errflg ]
+  standard_name = ccpp_error_flag
+  long_name = Error flag for error handling in CCPP
+  units = flag
+  dimensions = ()
+  type = integer
+  intent = out
+[ccpp-arg-table]
+  name = kessler_init
+  type = scheme
+[ errmsg ]
+  standard_name = ccpp_error_message
+  long_name = Error message for error handling in CCPP
+  units = 1
+  dimensions = ()
+  type = character
+  kind = len=512
+  intent = out
+[ errflg ]
+  standard_name = ccpp_error_flag
+  long_name = Error flag for error handling in CCPP
+  units = flag
+  dimensions = ()
+  type = integer
+  intent = out
+[ccpp-arg-table]
+  name = kessler_finalize
+  type = scheme
+[ errmsg ]
+  standard_name = ccpp_error_message
+  long_name = Error message for error handling in CCPP
+  units = 1
+  dimensions = ()
+  type = character
+  kind = len=512
+  intent = out
+[ errflg ]
+  standard_name = ccpp_error_flag
+  long_name = Error flag for error handling in CCPP
+  units = flag
+  dimensions = ()
+  type = integer
+  intent = out

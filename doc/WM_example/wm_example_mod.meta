@@ -1,0 +1,19 @@
+[ccpp-arg-table]
+  name = wm_example_mod
+  type = module
+[ ime ]
+  standard_name = horizontal_loop_extent
+  type = integer
+  units = count
+  dimensions = ()
+[ kme ]
+  standard_name = vertical_level_dimension
+  type = integer
+  units = count
+  dimensions = ()
+[ th_phy ]
+  standard_name = potential_temperature
+  units = K
+  dimensions = (horizontal_loop_extent,vertical_level_dimension)
+  type = real
+  kind = kind_phys
