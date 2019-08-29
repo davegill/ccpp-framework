@@ -1,0 +1,52 @@
+[ccpp-arg-table]
+  name = mpas_sub
+  type = host
+[j]
+  standard_name = second_horiz_index
+  long_name = second horiz index
+  units = none
+  dimensions = ()
+  type = integer
+[its]
+  standard_name = horizontal_loop_start
+  long_name = horizontal loop start
+  units = none
+  dimensions = ()
+  type = integer
+[ite]
+  standard_name = horizontal_loop_end
+  long_name = horizontal loop end
+  units = none
+  dimensions = ()
+  type = integer
+[kts]
+  standard_name = vertical_layer_start
+  long_name = vertical layer start
+  units = none
+  dimensions = ()
+  type = integer
+[kte]
+  standard_name = vertical_layer_end
+  long_name = vertical layer end
+  units = none
+  dimensions = ()
+  type = integer
+[nmix]
+  standard_name = number_of_scalar_tracers
+  long_name = number of scalar tracers
+  units = none
+  dimensions = ()
+  type = integer
+[errmsg]
+  standard_name = ccpp_error_message
+  long_name = error message for error handling in CCPP
+  units = none
+  dimensions = ()
+  type = character
+  kind = len=*
+[errflg]
+  standard_name = ccpp_error_flag
+  long_name = error flag for error handling in CCPP
+  units = flag
+  dimensions = ()
+  type = integer
