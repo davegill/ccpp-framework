@@ -457,7 +457,7 @@ contains
 !-------------------------------------------------------------------------------
 !
 
-!> \section arg_table_ysu_bl_run  Argument Table
+!> \section arg_table_bl_ysu_run  Argument Table
 !! \htmlinclude arg_table_bl_ysu_run.html
 !!
    subroutine bl_ysu_run(j,ux,vx,tx,qvx,qcx,qix,nmix,qmix,p2d,p2di,pi2d,       &
