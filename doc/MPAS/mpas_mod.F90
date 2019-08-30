@@ -9,11 +9,14 @@ module mpas_mod
    !! \htmlinclude arg_table_mpas_mod.html
    !!
   
-   !  dimensions
+   !  dimensions, as if from MPAS somehow
    integer, parameter :: nVertLevels = 15
    integer, parameter :: nVertLevelsP1 = 16
+   integer, parameter :: nCells = 20
+
+   !  some derived dims
    integer, parameter :: nCellSolveStart = 1
-   integer, parameter :: nCellSolveEnd = 10
+   integer, parameter :: nCellSolveEnd = nCells
    integer, parameter :: nVertStart = 1
    integer, parameter :: nVertEnd = nVertLevels
    integer, parameter :: nVertStartP1 = 1
