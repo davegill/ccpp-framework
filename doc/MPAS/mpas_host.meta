@@ -1,0 +1,22 @@
+[ccpp-arg-table]
+  name = mpas_sub
+  type = host
+[j]
+  standard_name = second_horiz_index
+  long_name = second horiz index
+  units = none
+  dimensions = ()
+  type = integer
+[errmsg]
+  standard_name = ccpp_error_message
+  long_name = error message for error handling in CCPP
+  units = none
+  dimensions = ()
+  type = character
+  kind = len=*
+[errflg]
+  standard_name = ccpp_error_flag
+  long_name = error flag for error handling in CCPP
+  units = flag
+  dimensions = ()
+  type = integer
