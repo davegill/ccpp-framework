@@ -35,8 +35,8 @@
 !
 module bl_ysu
 
-!use mpas_log
-USE ccpp_kinds, ONLY: kind_phys
+  !use mpas_log
+  USE ccpp_kinds, ONLY: kind_phys
 
   IMPLICIT NONE
 
@@ -632,7 +632,7 @@ contains
 ! local vars
 !
    real,     dimension( its:ite )            ::                           hol
-   real,     dimension( its:ite, kts:kme )   ::                            zq
+   real,     dimension( its:ite, kms:kme )   ::                            zq
 !
    real,     dimension( its:ite, kts:kte )   ::                                &
                                                                thx,thvx,thlix, &
@@ -737,7 +737,7 @@ contains
                                                                       vconvfx
 
    real,     dimension( kts:kte )   :: dummy1,dummy2,dummy4
-   real,     dimension( kts:kme )   :: dummy3
+   real,     dimension( kms:kme )   :: dummy3
 !
 !-------------------------------------------------------------------------------
 !
@@ -1564,7 +1564,7 @@ contains
          dummy4(k) = dzq(i,k)
       enddo
       dummy3(kte+1) = zq(i,kte+1)
-      !call get_pblh(kts,kte,pblh_ysu(i),dummy1,dummy2,dummy3,dummy4,xland(i))
+      call get_pblh(kts,kte,pblh_ysu(i),dummy1,dummy2,dummy3,dummy4,xland(i))
 
 !--- end of paj tke
 ! compute vconv
