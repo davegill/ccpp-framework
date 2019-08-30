@@ -34,7 +34,18 @@
 !
 !
 module bl_ysu
-use mpas_log
+
+!use mpas_log
+USE ccpp_kinds, ONLY: kind_phys
+
+  IMPLICIT NONE
+  PRIVATE
+
+  PUBLIC :: bl_ysu_init
+  PUBLIC :: bl_ysu_run
+  PUBLIC :: bl_ysu_finalize
+
+
 contains
 !
 !
@@ -442,6 +453,7 @@ contains
 !
 !-------------------------------------------------------------------------------
 !
+
 !> \section arg_table_ysu_bl_run  Argument Table
 !! \htmlinclude arg_table_bl_ysu_run.html
 !!
@@ -1550,7 +1562,7 @@ contains
          dummy4(k) = dzq(i,k)
       enddo
       dummy3(kte+1) = zq(i,kte+1)
-      call get_pblh(kts,kte,pblh_ysu(i),dummy1,dummy2,dummy3,dummy4,xland(i))
+      !call get_pblh(kts,kte,pblh_ysu(i),dummy1,dummy2,dummy3,dummy4,xland(i))
 
 !--- end of paj tke
 ! compute vconv
@@ -1660,6 +1672,36 @@ contains
    errflg = 0
 !
    end subroutine bl_ysu_run
+
+!> \section arg_table_bl_ysu_init  Argument Table
+!! \htmlinclude arg_table_bl_ysu_init.html
+!!
+  subroutine bl_ysu_init (errmsg, errflg)
+
+    character(len=512),      intent(out)   :: errmsg
+    integer,                 intent(out)   :: errflg
+
+    ! This routine currently does nothing
+
+    errmsg = ''
+    errflg = 0
+
+  end subroutine bl_ysu_init
+
+!> \section arg_table_bl_ysu_finalize  Argument Table
+!! \htmlinclude arg_table_bl_ysu_finalize.html
+!!
+  subroutine bl_ysu_finalize (errmsg, errflg)
+
+    character(len=512),      intent(out)   :: errmsg
+    integer,                 intent(out)   :: errflg
+
+    ! This routine currently does nothing
+
+    errmsg = ''
+    errflg = 0
+
+  end subroutine bl_ysu_finalize
 !-------------------------------------------------------------------------------
 !
 !-------------------------------------------------------------------------------
