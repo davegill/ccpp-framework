@@ -39,12 +39,15 @@ module bl_ysu
 USE ccpp_kinds, ONLY: kind_phys
 
   IMPLICIT NONE
-  PRIVATE
 
   PUBLIC :: bl_ysu_init
   PUBLIC :: bl_ysu_run
   PUBLIC :: bl_ysu_finalize
 
+  PRIVATE :: ysu
+  PRIVATE :: tridi1n
+  PRIVATE :: tridin_ysu
+  PRIVATE :: get_pblh
 
 contains
 !
