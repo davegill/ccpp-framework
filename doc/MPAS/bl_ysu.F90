@@ -554,8 +554,7 @@ contains
    integer,parameter ::  imvdif = 1
    real,parameter    ::  rcl = 1.0
 !
-   integer,  intent(in   )   ::     its,ite, kts,kte, kms,kme                  &
-                                    j
+   integer,  intent(in   )   ::     its,ite, kts,kte, kms,kme, j
 
    integer,  intent(in)      ::     ysu_topdown_pblmix 
 !
@@ -1681,7 +1680,7 @@ contains
 !!
   subroutine bl_ysu_init (errmsg, errflg)
 
-    character(len=512),      intent(out)   :: errmsg
+    character(len=*),        intent(out)   :: errmsg
     integer,                 intent(out)   :: errflg
 
     ! This routine currently does nothing
@@ -1696,7 +1695,7 @@ contains
 !!
   subroutine bl_ysu_finalize (errmsg, errflg)
 
-    character(len=512),      intent(out)   :: errmsg
+    character(len=*),        intent(out)   :: errmsg
     integer,                 intent(out)   :: errflg
 
     ! This routine currently does nothing
