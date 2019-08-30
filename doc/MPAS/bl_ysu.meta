@@ -482,7 +482,7 @@
   intent = in
   optional = F
 [kte]
-  standard_name = vertical_interface_end
+  standard_name = vertical_layer_end
   long_name = vertical interface end
   units = none 
   dimensions = ()
@@ -498,7 +498,7 @@
   intent = in
   optional = F
 [kme]
-  standard_name = vertical_layer_end
+  standard_name = vertical_interface_end
   long_name = vertical layer end
   units = none 
   dimensions = ()
